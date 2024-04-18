@@ -10,17 +10,140 @@
   <header class="header">
     <a href="#" class="icon"><img src="assets/icon-plain.svg"></a>
     <nav>
-      <a href="#">Studio</a>
-      <a href="#">Pricing</a>
       <a href="#">Learn</a>
-      <img class="burger" src="assets/burger.svg" alt="">
+      <a href="#">Soundshop</a>
+      <div class="button invert">Log in</div>
+      <!-- <img class="burger" src="assets/burger 2.svg" alt=""> -->
     </nav>
   </header>
   <div class="lead">
-    <h1>Make music<br />online...</h1>
-    <!-- <img src="assets/app.gif" alt=""> -->
-    <div class="button">Get started free</div>
+    <div class="blurb">
+      <p>Amped is an online music studio you can use <i>anywhere...</i></p>
+      <!-- <div class="menu">
+        <div>↪ <a href="#features">Features</a></div>
+        <div>↪ <a href="#music">Music</a></div>
+        <div>↪ <a href="#pricing">Pricing</a></div>
+      </div> -->
+      <div class="button big">Get started free</div>
+    </div>
+    <!-- <img src="assets/down.svg" alt=""> -->
   </div>
+  <div id="features">
+    <section class="contents">
+      <div class="text">
+        <h1>Create with Amped</h1>
+        <p>Amped contains all of the tools you need to create professional sounding tracks</p>
+      </div>
+      <div class="list">
+        <div>
+          <div class="list-text">
+            <h2>Generate ideas with AI</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tortor lorem, non suscipit est fermentum non.</p>
+            <div class="controls">
+              <div class="essential_audio player"></div>
+              <div class="button invert">Learn more</div>
+            </div>
+          </div>
+          <img src="assets/features/drum-editor.png" alt="">
+        </div>
+        <div>
+          <img src="assets/features/automation.png" alt="">
+          <div class="list-text">
+            <h2>Edit beats and sequences</h2>
+            <p>Proin scelerisque nisi non massa feugiat, sed mattis neque faucibus. Nulla quis mauris non erat imperdiet suscipit sit amet ut ligula.</p>
+            <div class="controls">
+              <div class="essential_audio player">
+              </div><div class="button invert">Learn more</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="list-text">
+            <h2>Add colour with synths and effects</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus tortor lorem, non suscipit est fermentum non.</p>
+            <div class="controls">
+              <div class="essential_audio player"></div>
+              <div class="button invert">Learn more</div>
+            </div>
+          </div>
+          <img src="assets/features/drum-editor.png" alt="">
+        </div>
+        <div>
+          <img src="assets/features/automation.png" alt="">
+          <div class="list-text">
+            <h2>Share and sell tracks in the marketplace</h2>
+            <p>Proin scelerisque nisi non massa feugiat, sed mattis neque faucibus. Nulla quis mauris non erat imperdiet suscipit sit amet ut ligula.</p>
+            <div class="controls">
+              <div class="essential_audio player">
+              </div><div class="button invert">Learn more</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img src="assets/tools/dexed.webp" alt=""> -->
+      <!-- <div class="link">↪ <a href="">Explore the manual</a></div> -->
+    </section>
+  </div>
+  <div id="music">
+    <section class="contents">
+      <div class="text">
+        <h1>Music made with Amped</h1>
+        <p>Get started by playing with our demo tracks in Amped Studio</p>
+      </div>
+      <div class="tracks">
+        <div class="track">
+          <img src="assets/tracks/death-blip.jpg" alt="">
+          <div class="player-container">
+            <div>Death Blip by DMX Krew</div>
+            <div class="essential_audio player" data-url="/assets/audio/death-blip.mp3"></div>
+            <div class="button invert">Edit track in Amped</div>
+          </div>
+        </div>
+        <div class="track">
+          <img src="assets/tracks/crisis-mode.jpg" alt="">
+          <div class="player-container">
+            <div>Crisis Mode by DJ JavaScript</div>
+            <div class="essential_audio player" data-url="/assets/audio/crisis-mode.mp3"></div>
+            <div class="button invert">Edit track in Amped</div>
+          </div>
+        </div>
+        <div class="track">
+          <img src="assets/tracks/telephax.jpg" alt="">
+          <div class="player-container">
+            <div>Telephax by Ceephax Acid Krew</div>
+            <div class="essential_audio player" data-url="/assets/audio/telephax.mp3"></div>
+            <div class="button invert">Edit track in Amped</div>
+          </div>
+        </div>
+        <div class="track">
+          <img src="assets/tracks/pure-tibet.jpg" alt="">
+          <div class="player-container">
+            <div>Pure Tibet by Palmbomen II</div>
+            <div class="essential_audio player" data-url="/assets/audio/pure-tibet.mp3"></div>
+            <div class="button invert">Edit track in Amped</div>
+          </div>
+        </div>
+        <div class="track">
+          <img src="assets/tracks/level-select.jpg" alt="">
+          <div class="player-container">
+            <div>Level Select by Pizza Hotline</div>
+            <div class="essential_audio player" data-url="/assets/audio/level-select.mp3"></div>
+            <div class="button invert">Edit track in Amped</div>
+          </div>
+        </div>
+        <div class="track">
+          <img src="assets/tracks/submarine.jpg" alt="">
+          <div class="player-container">
+            <div>Submarine by Qteku</div>
+            <div class="essential_audio player" data-url="/assets/audio/submarine.mp3"></div>
+            <div class="button invert">Edit track in Amped</div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="link">↪ <a href="">Explore more music</a></div> -->
+    </section>
+  </div>
+  <script src="app.js"></script>
   <script>
     new EventSource('/esbuild').addEventListener('change', () => location.reload())
   </script>
