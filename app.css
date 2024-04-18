@@ -1,0 +1,110 @@
+/* src/css/header.css */
+.header {
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed var(--col-border);
+}
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 34px;
+  flex-grow: 1;
+  font-size: .8em;
+  text-transform: uppercase;
+  font-family: Sono;
+}
+.header .burger {
+  width: 20px;
+  height: 100%;
+}
+.header .burger:hover {
+  cursor: pointer;
+}
+.header .icon {
+  display: flex;
+}
+.header .icon > img {
+  width: 16px;
+  height: 100%;
+  padding: 8px;
+  border-radius: 100%;
+  border: 1px dashed;
+}
+
+/* src/css/lead.css */
+.lead {
+  height: calc(100vh - 51px);
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  background-image: url(assets/app.png);
+}
+.lead h1 {
+  margin: 10vh 0 0 0;
+  text-transform: uppercase;
+  font-family: HKGrotesk;
+  font-weight: 100;
+  font-size: 10vw;
+  -webkit-text-stroke: 1px black;
+  color: white;
+}
+.lead img {
+  position: absolute;
+  top: 40vh;
+  left: 50vw;
+  z-index: -1;
+  width: 500px;
+}
+.lead .button {
+  margin-left: 6px;
+}
+
+/* src/css/main.css */
+@font-face {
+  font-family: "HKGrotesk";
+  src: url(assets/HKGrotesk-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "Sono";
+  src: url(assets/Sono.ttf) format("truetype");
+}
+:root {
+  --col-bg-main: #f6f6f6;
+  --col-border: #4e4e4e;
+  --col-box-shadow: rgb(169, 169, 169);
+  --col-highlight: rgb(0, 0, 255);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: var(--col-bg-main);
+}
+.container {
+  max-width: 1200px;
+  align-self: center;
+  padding: 30px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+.button {
+  align-self: flex-start;
+  border: 1px solid black;
+  padding: 8px;
+  background-color: var(--col-highlight);
+  color: white;
+  font-family: Sono;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}

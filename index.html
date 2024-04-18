@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amped Studio</title>
+  <link rel="stylesheet" type="text/css" href="app.css"/>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="icon"><img src="assets/icon-plain.svg"></a>
+    <nav>
+      <a href="#">Studio</a>
+      <a href="#">Pricing</a>
+      <a href="#">Learn</a>
+      <img class="burger" src="assets/burger.svg" alt="">
+    </nav>
+  </header>
+  <div class="lead">
+    <h1>Make music<br />online...</h1>
+    <!-- <img src="assets/app.gif" alt=""> -->
+    <div class="button">Get started free</div>
+  </div>
+  <script>
+    new EventSource('/esbuild').addEventListener('change', () => location.reload())
+  </script>
+</body>
+</html>
